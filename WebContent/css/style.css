@@ -1,0 +1,28 @@
+.slider-size{
+    width: 60%;
+    padding: 10% 0 0 40%;
+}
+.container-home{
+    background-image: url(../img/bckgHome.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.container-50s{
+    background-image: url(../img/50sbckg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.container-80s{
+    background-image: url(../img/bckg2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
