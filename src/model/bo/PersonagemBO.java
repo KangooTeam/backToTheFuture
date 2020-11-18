@@ -23,7 +23,7 @@ public class PersonagemBO {
 	 * 
 	 * @throw SQLException
 	 */
-	Personagem getPersonagem(String nome) {
+	public Personagem getPersonagem(String nome) {
 		Personagem personagem = personagemdao.getPersonagem(nome);
 		personagem.setTimeline(pontotempodao.getPontosTempo(nome));
 		personagem.setRelacionamentos(relacionamentodao.getRelacionamentos(nome));
