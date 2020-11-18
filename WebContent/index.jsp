@@ -39,6 +39,11 @@
                             href="https://drive.google.com/file/d/1nA-cXkpc7ENjPZjy24lnH1wNQru0qyqg/view">Diagrama de
                             Classes</a>
                     </li>
+                    <li class="nav-item">
+                    	<a class="btn-download nav-link" href="./down/machine_learning.docx" download="BackToTheFuture_MachineLearning">
+							<img src="./img/download.png" width="100px" alt="BackToTheFuture">
+						</a>
+                    </li>
                 </ul>
             </div>
         </div>
