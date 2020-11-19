@@ -20,11 +20,10 @@
 
 -- Rodar os drops tables nesta ordem devido a constraint que existe na tabela.
 
-/*
+
   drop table t_tl_relacionamento;
   drop table t_tl_pontotempo; 
   drop table t_tl_personagem;
-*/
 
 
 
@@ -32,7 +31,7 @@ CREATE TABLE t_tl_personagem (
     nm_nome             VARCHAR2(255) NOT NULL,
     ds_descricao        VARCHAR2(1000) NOT NULL,
     ds_caracteristicas  VARCHAR2(1000) NOT NULL,
-    im_imgpersonagem    BLOB
+    im_imgpersonagem    VARCHAR2(1000) NOT NULL
 );
 
 -- Error - Index T_TL_PERSONAGEM__IDX has no columns

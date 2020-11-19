@@ -33,11 +33,11 @@ public class PersonagemServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
-		Personagem personagem =  personagemBO.getPersonagem("");
-		Personagem personagem2 =  personagemBO.getPersonagem("");
-		Personagem personagem3 =  personagemBO.getPersonagem("");
-		Personagem personagem4 =  personagemBO.getPersonagem("");
-		Personagem personagem5 =  personagemBO.getPersonagem(""); //ENQUANTO NÃO TIVER O PERSONAGEM NO BANCO, DEIXAR COMENTADO
+		Personagem personagem =  personagemBO.getPersonagem("Martin Seamus McFly");	
+		Personagem personagem2 =  personagemBO.getPersonagem("Dr. Emmett L. Brown (Doc)");
+		Personagem personagem3 =  personagemBO.getPersonagem("Biff Tannen Howard");
+		Personagem personagem4 =  personagemBO.getPersonagem("George McFly");
+		Personagem personagem5 =  personagemBO.getPersonagem("Lorraine Baines McFly");
 		dispatcher.forward(request, response);
 	}
 }

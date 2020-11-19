@@ -15,7 +15,7 @@ public class PontoTempoDAO {
 	 * 
 	 * @since 1ª entrega do DISRUPT21
 	 */
-	String table = "T_TL_PONTOTEMPO";
+	String table = "t_tl_pontotempo";
 
 	/**
 	 * Método de criar um array de Pontos no tempo, formando a timeline do Personagem (RESEARCH in CRUD)
@@ -29,7 +29,7 @@ public class PontoTempoDAO {
 		
 		try {
 			Connector connector = new Connector();
-			ResultSet result = connector.ExecuteQuery("SELECT * FROM " + table + " WHERE t_tl_personagem_nm_nome = " + nome); //achar o ponto a partir do nome do personagem
+			ResultSet result = connector.ExecuteQuery("SELECT * FROM " + table + " WHERE t_tl_personagem_nm_nome = " + "'" + nome + "'"); //achar o ponto a partir do nome do personagem
 					
 			while (result.next()) {
 				int id = result.getInt("cd_id");

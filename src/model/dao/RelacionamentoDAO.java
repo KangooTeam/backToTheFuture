@@ -14,7 +14,7 @@ public class RelacionamentoDAO {
 	 * 
 	 * @since 1ª entrega do DISRUPT21
 	 */
-	String table = "T_TL_Relacionamento";
+	String table = "t_tl_relacionamento";
 
 	/**
 	 * Método de criar um objeto Relacionamento (RESEARCH in CRUD)
@@ -29,7 +29,7 @@ public class RelacionamentoDAO {
 		try {
 			Connector connector = new Connector();
 			ResultSet result = connector
-					.ExecuteQuery("SELECT * FROM " + table + " WHERE t_tl_personagem_nm_nome =" + nome); // achar o
+					.ExecuteQuery("SELECT * FROM " + table + " WHERE t_tl_personagem_nm_nome =" + "'" + nome + "'"); // achar o
 																											// ponto a
 																											// partir do
 																											// nome do
