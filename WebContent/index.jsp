@@ -1,16 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="f"%>
 <!DOCTYPE html>
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title>Back To The Future</title>
+    <title><f:message key="site.titulo" /></title>
 </head>
 
 <body class="body-home">
@@ -27,17 +29,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
+                        <a class="nav-link" href="#"><f:message key="site.inicial"/>
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./50sTimeline.jsp">Timeline</a>
+                        <a class="nav-link" href="./50sTimeline.jsp"><f:message key="site.timeline"/></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" target="_blank"
-                            href="https://drive.google.com/file/d/1nA-cXkpc7ENjPZjy24lnH1wNQru0qyqg/view">Diagrama de
-                            Classes</a>
+                            href="https://drive.google.com/file/d/1nA-cXkpc7ENjPZjy24lnH1wNQru0qyqg/view"><f:message key="site.diagrama"/></a>
                     </li>
                     <li class="nav-item">
                     	<a class="btn-download nav-link" href="./down/machine_learning.docx" download="BackToTheFuture_MachineLearning">
@@ -94,10 +95,15 @@
                             </a>
                         </div>
                     </section>
+    
                 </div>
             </div>
         </div>
     </div>
+    <div>
+		<a class="idioma" href="change?lingua=pt-br"><img src="./img/brazil.png"></a>
+		<a class="idioma" href="change?lingua=en"><img src="./img/united.png"></a>
+	</div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
