@@ -13,7 +13,7 @@ public class PersonagemDAO {
 	 * 
 	 * @since 1ª entrega do DISRUPT21
 	 */
-	String table = "T_TL_Personagem";
+	String table = "t_tl_personagem";
 
 	/**
 	 * Método de criar um objeto Personagem (RESEARCH in CRUD)
@@ -25,7 +25,7 @@ public class PersonagemDAO {
 	public Personagem getPersonagem(String nome) {
 		try {
 			Connector connector = new Connector();
-			ResultSet result = connector.ExecuteQuery("SELECT * FROM " + table + " WHERE nm_nome =" + nome);
+			ResultSet result = connector.ExecuteQuery("SELECT * FROM " + table + " WHERE nm_nome =" + "'" + nome + "'");
 
 			while (result.next()) {
 				String descricao = result.getString("ds_descricao");
