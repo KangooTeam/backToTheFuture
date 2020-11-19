@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="f"%>
 <!DOCTYPE html>
 <html lang="pt">
 
@@ -15,41 +17,7 @@
 </head>
 
 <body class="body-80s">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img width="70px" src="./img/logo.png" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
-                aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.jsp">Home
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./50sTimeline.jsp">Timeline
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank"
-                            href="https://drive.google.com/file/d/1nA-cXkpc7ENjPZjy24lnH1wNQru0qyqg/view">Diagrama de
-                            Classes</a>
-                    </li>
-                    <li class="nav-item">
-                    	<a class="btn-download nav-link" href="./down/machine_learning.docx" download="BackToTheFuture_MachineLearning">
-							<img src="./img/download.png" width="100px" alt="BackToTheFuture">
-						</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <%@ include file="menu-header.html" %>
 
     <!-- Page Content -->
     <div class="container mt-5 pt-5">
