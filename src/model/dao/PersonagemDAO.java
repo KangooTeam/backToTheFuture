@@ -30,9 +30,10 @@ public class PersonagemDAO {
 			while (result.next()) {
 				String descricao = result.getString("ds_descricao");
 				String caracteristicas = result.getString("ds_caracteristicas");
-
+				String urlFoto = result.getString("im_imgpersonagem");
+				
 				connector.Close();
-				return new Personagem(nome, descricao, caracteristicas);
+				return new Personagem(nome, descricao, caracteristicas, urlFoto);
 			}
 
 		} catch (SQLException e) {

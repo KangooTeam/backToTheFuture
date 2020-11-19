@@ -39,9 +39,9 @@ public class RelacionamentoDAO {
 				String personagemRelacionado = result.getString("t_tl_personagem_nm_nome");
 				String parentesco = result.getString("ds_parentesco");
 
-				connector.Close();
 				relacionamentos.add(new Relacionamento(parentesco, personagemRelacionado));
 			}
+			connector.Close();
 
 		} catch (SQLException e) {
 			e.printStackTrace();

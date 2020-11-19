@@ -34,22 +34,28 @@ public class PersonagemServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 		Personagem martin =  personagemBO.getPersonagem("Martin Seamus McFly");	
+		request.setAttribute("martinFoto", martin.getUrlFoto());
 		request.setAttribute("martinName", martin.getNome());
 		request.setAttribute("martinDescricao", martin.getDescricao());
 		
 		Personagem doc =  personagemBO.getPersonagem("Dr. Emmett L. Brown (Doc)");
+		request.setAttribute("docFoto", doc.getUrlFoto());
 		request.setAttribute("docName", doc.getNome());
 		request.setAttribute("docDescricao", doc.getDescricao());
 		
 		Personagem biff =  personagemBO.getPersonagem("Biff Tannen Howard");
+		request.setAttribute("biffFoto", biff.getUrlFoto());
+		System.out.println(biff.getUrlFoto());
 		request.setAttribute("biffName", biff.getNome());
 		request.setAttribute("biffDescricao", biff.getDescricao());
 		
 		Personagem george =  personagemBO.getPersonagem("George McFly");
+		request.setAttribute("georgeFoto", george.getUrlFoto());
 		request.setAttribute("georgeName", george.getNome());
 		request.setAttribute("georgeDescricao", george.getDescricao());
 		
 		Personagem lorraine =  personagemBO.getPersonagem("Lorraine Baines McFly");
+		request.setAttribute("lorraineFoto", lorraine.getUrlFoto());
 		request.setAttribute("lorraineName", lorraine.getNome());
 		request.setAttribute("lorraineDescricao", lorraine.getDescricao());
 		
