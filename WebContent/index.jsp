@@ -62,24 +62,40 @@
                                     <img class="d-block w-100"
                                         src="https://static.wikia.nocookie.net/bttf/images/f/f0/George-01.jpg/revision/latest/scale-to-width-down/340?cb=20101214140916">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Nome</h5>
-                                        <p>Descricao</p>
+                                        <h5>${georgeName}</h5>
+                                        <p>${georgeDescricao}</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100"
                                         src="https://static.wikia.nocookie.net/bttf/images/6/65/Jennifer-02.jpg/revision/latest/scale-to-width-down/340?cb=20101214135757">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Nome</h5>
-                                        <p>Descricao</p>
+                                        <h5>${docName}</h5>
+                                        <p>${docDescricao}</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100"
                                         src="https://super.abril.com.br/wp-content/uploads/2018/07/martin.jpg">
                                     <div class="carousel-caption d-none d-md-block">
-                                        <h5>Nome</h5>
-                                        <p>Descricao</p>
+                                        <h5>${martinName}</h5>
+                                        <p>${martinDescricao}</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="https://super.abril.com.br/wp-content/uploads/2018/07/martin.jpg">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>${lorraineName}</h5>
+                                        <p>${lorraineDescricao}</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100"
+                                        src="https://super.abril.com.br/wp-content/uploads/2018/07/martin.jpg">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>${biffName}</h5>
+                                        <p>${biffDescricao}</p>
                                     </div>
                                 </div>
                             </div>
