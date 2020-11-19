@@ -54,7 +54,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img class="d-block w-100"
-                                        src="https://static.wikia.nocookie.net/bttf/images/f/f0/George-01.jpg/revision/latest/scale-to-width-down/340?cb=20101214140916">
+                                        src="${georgeFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${georgeName}</h5>
                                         <p>${georgeDescricao}</p>
@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100"
-                                        src="https://static.wikia.nocookie.net/bttf/images/6/65/Jennifer-02.jpg/revision/latest/scale-to-width-down/340?cb=20101214135757">
+                                        src="${docFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${docName}</h5>
                                         <p>${docDescricao}</p>
@@ -70,7 +70,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100"
-                                        src="https://super.abril.com.br/wp-content/uploads/2018/07/martin.jpg">
+                                        src="${martinFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${martinName}</h5>
                                         <p>${martinDescricao}</p>
@@ -78,7 +78,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100"
-                                        src="https://super.abril.com.br/wp-content/uploads/2018/07/martin.jpg">
+                                        src="${lorraineFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${lorraineName}</h5>
                                         <p>${lorraineDescricao}</p>
@@ -86,7 +86,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <img class="d-block w-100"
-                                        src="https://super.abril.com.br/wp-content/uploads/2018/07/martin.jpg">
+                                        src="${biffFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${biffName}</h5>
                                         <p>${biffDescricao}</p>

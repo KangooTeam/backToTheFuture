@@ -6,14 +6,24 @@ public class Personagem {
 	private String nome;
 	private String descricao;
 	private String caracteristicas;
+	private String urlFoto;
 	private ArrayList<Relacionamento> relacionamentos;
 	private ArrayList<PontoTempo> timeline;
 
-	public Personagem(String nome, String descricao, String caracteristicas) {
+	public Personagem(String nome, String descricao, String caracteristicas, String urlFoto) {
 		super();
 		this.nome = nome;
 		this.descricao = descricao;
 		this.caracteristicas = caracteristicas;
+		this.urlFoto = urlFoto;
+	}
+
+	public String getUrlFoto() {
+		return urlFoto;
+	}
+
+	public void setUrlFoto(String urlFoto) {
+		this.urlFoto = urlFoto;
 	}
 
 	public String getNome() {

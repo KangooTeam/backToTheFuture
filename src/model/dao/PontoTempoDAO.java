@@ -37,9 +37,9 @@ public class PontoTempoDAO {
 				Integer anoVigente = result.getInt("dt_anovigente");
 				String descricao = result.getString("ds_descricao");
 				
-				connector.Close();
 				timeline.add(new PontoTempo(id, nomePersonagem, anoVigente, descricao));
 			}
+			connector.Close();
 
 		} catch (SQLException e) {
 			e.printStackTrace();
