@@ -55,6 +55,7 @@ public class PersonagemServlet extends HttpServlet {
 		request.setAttribute("docDescricao", doc.getDescricao());
 		request.setAttribute("docParentesco", docRelac.getParentesco());
 		request.setAttribute("docPersRelacionado", docRelac.getPersonagemRelacionado());
+		context.setAttribute("docTimeline", doc.getTimeline());
 		
 		Personagem biff =  personagemBO.getPersonagem("Biff Tannen Howard");
 		Relacionamento biffRelac = relacionamentoBO.getRelacionamento("Biff Tannen Howard");
@@ -63,6 +64,7 @@ public class PersonagemServlet extends HttpServlet {
 		request.setAttribute("biffDescricao", biff.getDescricao());
 		request.setAttribute("biffParentesco", biffRelac.getParentesco());
 		request.setAttribute("biffPersRelacionado", biffRelac.getPersonagemRelacionado());
+		context.setAttribute("biffTimeline", biff.getTimeline());
 		
 		Personagem george =  personagemBO.getPersonagem("George McFly");
 		Relacionamento georgeRelac = relacionamentoBO.getRelacionamento("George McFly");
@@ -71,6 +73,7 @@ public class PersonagemServlet extends HttpServlet {
 		request.setAttribute("georgeDescricao", george.getDescricao());
 		request.setAttribute("georgeParentesco", georgeRelac.getParentesco());
 		request.setAttribute("georgePersRelacionado", georgeRelac.getPersonagemRelacionado());
+		context.setAttribute("georgeTimeline", george.getTimeline());
 		
 		Personagem lorraine =  personagemBO.getPersonagem("Lorraine Baines McFly");
 		Relacionamento lorraineRelac = relacionamentoBO.getRelacionamento("Lorraine Baines McFly");
@@ -79,6 +82,7 @@ public class PersonagemServlet extends HttpServlet {
 		request.setAttribute("lorraineDescricao", lorraine.getDescricao());
 		request.setAttribute("lorraineParentesco", lorraineRelac.getParentesco());
 		request.setAttribute("lorrainePersRelacionado", lorraineRelac.getPersonagemRelacionado());
+		context.setAttribute("lorraineTimeline", lorraine.getTimeline());
 		
 		dispatcher.forward(request, response);
 	}

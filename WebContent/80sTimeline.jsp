@@ -21,9 +21,7 @@
 								<i class="fas fa-arrow-circle-left"></i>
 							</h1>
 						</a>
-						<h6 class="col">
-							<f:message key="site.pagina.80s.cardTitle" />
-						</h6>
+						<h6 class="col">${personagemNome}</h6>
 
 					</div>
 					
