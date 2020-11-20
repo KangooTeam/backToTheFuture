@@ -32,6 +32,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${georgeName}</h5>
                                         <p>${georgeDescricao}</p>
+                                        <a href="relacionamento.jsp?parentesco=${georgeParentesco}&nome=${georgeName}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -40,6 +41,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${docName}</h5>
                                         <p>${docDescricao}</p>
+                                       <a href="relacionamento.jsp?parentesco=${docParentesco}&nome=${docName}"> <button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -48,6 +50,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${martinName}</h5>
                                         <p>${martinDescricao}</p>
+                                        <a href="relacionamento.jsp?parentesco=${martinParentesco}&nome=${martinName}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -56,6 +59,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${lorraineName}</h5>
                                         <p>${lorraineDescricao}</p>
+                                        <a href="relacionamento.jsp?parentesco=${lorraineParentesco}&nome=${lorraineName}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -64,6 +68,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${biffName}</h5>
                                         <p>${biffDescricao}</p>
+                                        <a href="relacionamento.jsp?parentesco=${biffParentesco}&nome=${biffName}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                             </div>

@@ -1,17 +1,12 @@
 package model.bo;
 
 import model.bean.Personagem;
+import model.bean.Relacionamento;
 import model.dao.PersonagemDAO;
 import model.dao.PontoTempoDAO;
 import model.dao.RelacionamentoDAO;
 
-/*
- * Essa classe cria um objeto do tipo Personagem a partir dos DAOs.
- * 
- * @since 1ª entrega do DISRUPT21
- */
-
-public class PersonagemBO {
+public class RelacionamentoBO {
 	PersonagemDAO personagemdao = new PersonagemDAO();
 	PontoTempoDAO pontotempodao = new PontoTempoDAO();
 	RelacionamentoDAO relacionamentodao = new RelacionamentoDAO();
@@ -23,12 +18,8 @@ public class PersonagemBO {
 	 * 
 	 * @throw SQLException
 	 */
-	public Personagem getPersonagem(String nome) {
-		Personagem personagem = personagemdao.getPersonagem(nome);
-		personagem.setTimeline(pontotempodao.getPontosTempo(nome));
-		//personagem.setRelacionamentos(relacionamentodao.getRelacionamentos(nome));
-
-		return personagem;
+	public Relacionamento getRelacionamento(String nome) {
+		Relacionamento relacionamento = relacionamentodao.getRelacionamentos(nome);
+		return relacionamento;
 	}
-
 }
