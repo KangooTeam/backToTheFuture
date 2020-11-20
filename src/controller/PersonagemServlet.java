@@ -55,7 +55,6 @@ public class PersonagemServlet extends HttpServlet {
 		Personagem biff =  personagemBO.getPersonagem("Biff Tannen Howard");
 		Relacionamento biffRelac = relacionamentoBO.getRelacionamento("Biff Tannen Howard");
 		request.setAttribute("biffFoto", biff.getUrlFoto());
-		System.out.println(biff.getUrlFoto());
 		request.setAttribute("biffName", biff.getNome());
 		request.setAttribute("biffDescricao", biff.getDescricao());
 		request.setAttribute("biffParentesco", biffRelac.getParentesco());

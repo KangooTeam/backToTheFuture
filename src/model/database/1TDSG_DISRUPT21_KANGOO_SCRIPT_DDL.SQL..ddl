@@ -1,7 +1,7 @@
 /*
    Componentes do grupo Kangoo:
    84810 - Ingrid Miranda de Lacerda Buarque de Lyra
-   86353 - JoÃ£o Paulo Pereira MacÃªdo
+   86353 - João Paulo Pereira Macêdo
    85257 - Laura Fornazier Pilon Correia
    85987 - Lucas Pelosi de Almeida
    86125 - Mariana Alves de Oliveira Ribeiro
@@ -20,10 +20,11 @@
 
 -- Rodar os drops tables nesta ordem devido a constraint que existe na tabela.
 
-
+/*
   drop table t_tl_relacionamento;
   drop table t_tl_pontotempo; 
   drop table t_tl_personagem;
+*/
 
 
 
@@ -31,7 +32,7 @@ CREATE TABLE t_tl_personagem (
     nm_nome             VARCHAR2(255) NOT NULL,
     ds_descricao        VARCHAR2(1000) NOT NULL,
     ds_caracteristicas  VARCHAR2(1000) NOT NULL,
-    im_imgpersonagem    VARCHAR2(1000) NOT NULL
+    im_imgpersonagem    BLOB
 );
 
 -- Error - Index T_TL_PERSONAGEM__IDX has no columns
@@ -71,7 +72,7 @@ ALTER TABLE t_tl_relacionamento
 
 
 
--- Relatï¿½rio do Resumo do Oracle SQL Developer Data Modeler: 
+-- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
 -- 
 -- CREATE TABLE                             3
 -- CREATE INDEX                             1
