@@ -1,64 +1,55 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="f"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="f"%>
 <!DOCTYPE html>
 <html lang="pt">
 
-<%@ include file="head.html" %>
+<%@ include file="head.html"%>
 
 <body class="body-80s">
-    <%@ include file="menu-header.html" %>
+	<%@ include file="menu-header.html"%>
 
-    <!-- Page Content -->
-    <div class="container mt-5 pt-5">
-        <div class="col-md-12">
-            <div class="card bg-card">
-                <div class="card-body">
-                    <div class="card-title row text-light">
-                        <a class="col-lg-9 col-sm-10 col-8" href="./50sTimeline.jsp">
-                            <h1><i class="fas fa-arrow-circle-left"></i></h1>
-                        </a>
-                        <h6 class="col"><f:message key="site.pagina.80s.cardTitle" />
-                        </h6>
+	<!-- Page Content -->
+	<div class="container mt-5 pt-5">
+		<div class="col-md-12">
+			<div class="card bg-card">
+				<div class="card-body">
+					<div class="card-title row text-light">
+						<a class="col-lg-9 col-sm-10 col-8" href="./50sTimeline.jsp">
+							<h1>
+								<i class="fas fa-arrow-circle-left"></i>
+							</h1>
+						</a>
+						<h6 class="col">
+							<f:message key="site.pagina.80s.cardTitle" />
+						</h6>
 
-                    </div>
-                    <div id="content" class="text-light">
-                        <ul class="timeline">
-                            <li class="event" data-date="12:30 - 1:00pm">
-                                <h3>Registration</h3>
-                                <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
-                            </li>
-                            <li class="event" data-date="2:30 - 4:00pm">
-                                <h3>Opening Ceremony</h3>
-                                <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp;
-                                    Busta Rhymes as an opening show.</p>
-                            </li>
-                            <li class="event" data-date="5:00 - 8:00pm">
-                                <h3>Main Event</h3>
-                                <p>This is where it all goes down. You will compete head to head with your friends and
-                                    rivals. Get ready!</p>
-                            </li>
-                            <li class="event" data-date="8:30 - 9:30pm">
-                                <h3>Closing Ceremony</h3>
-                                <p>See how is the victor and who are the losers. The big stage is where the winners bask
-                                    in their own glory.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <%@ include file="scripts.html" %>
+					</div>
+					
+					<div id="content" class="text-light">
+						<ul class="timeline">
+							<c:forEach items="${timeline}" var="pontoTempo">
+								<li class="event" data-date="${pontoTempo.getAnoVigente()}">
+									<h3>${pontoTempo.getId()}</h3>
+									<p>${pontoTempo.getDescricao()}</p>
+								</li>
+							</c:forEach>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<%@ include file="scripts.html"%>
 </body>
 
 </html>
 <style>
-    a {
-        color: white;
-        text-decoration: none;
-        background-color: transparent;
-    }
+a {
+	color: white;
+	text-decoration: none;
+	background-color: transparent;
+}
 </style>

@@ -45,7 +45,7 @@
                                         <h5>${martinName}</h5>
                                         <p>${martinDescricao}</p>
                                         <a href="relacionamento.jsp?parentesco=${martinParentesco}&nome=${martinName}&personagemRelac=${martinPersRelacionado}&img=${martinFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
-                                    	<a href="50sTimeline.jsp"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
+                                    	<a href="LinhaTempoServlet?personagem=${martinName}"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -65,7 +65,7 @@
                                         <h5>${biffName}</h5>
                                         <p>${biffDescricao}</p>
                                         <a href="relacionamento.jsp?parentesco=${biffParentesco}&nome=${biffName}&personagemRelac=${biffPersRelacionado}&img=${biffFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
-                                        <a href="50sTimeline.jsp"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
+                                        <a href="50sTimeline.jsp"><button type="button" class="btn btn-dark"> Ver timeline</button></a> 
                                     </div>
                                 </div>
                             </div>

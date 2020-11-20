@@ -1,13 +1,17 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import model.bean.PontoTempo;
 
 /**
  * Servlet implementation class LinhaTempoServlet
@@ -28,9 +32,23 @@ public class LinhaTempoServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+		ServletContext context = getServletContext();
 		
+		String nome = request.getParameter("personagem");
+		ArrayList<PontoTempo> timeline = getPontoTempo(nome);
+		request.setAttribute("timeline", timeline);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("80sTimeline.jsp"); //direcionar pra a página de acordo com a data dos fatos
+		
+		dispatcher.forward(request, response);
+	}
+	
+	private ArrayList<PontoTempo> getPontoTempo(String nome){
+		ServletContext context = getServletContext();
+		if (nome.equals("Martin Seamus McFly")) {
+			return (ArrayList<PontoTempo>) context.getAttribute("martinTimeline");
+		}
+		
+		return null;
 		
 	}
 

@@ -18,4 +18,11 @@
   <servlet-class>src.controller.PersonagemServlet</servlet-class>
 </servlet>
 
+<servlet>
+  <description></description>
+  <display-name>LinhaTempoServlet</display-name>
+  <servlet-name>LinhaTempoServlet</servlet-name>
+  <servlet-class>src.controller.LinhaTempoServlet</servlet-class>
+</servlet>
+
 </web-app>
