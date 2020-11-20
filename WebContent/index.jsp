@@ -19,48 +19,53 @@
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block w-100"
+                                    <img class="d-block w-100" height="400px"
                                         src="${georgeFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${georgeName}</h5>
                                         <p>${georgeDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${georgeParentesco}&nome=${georgeName}&personagemRelac=${georgePersRelacionado}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${georgeParentesco}&nome=${georgeName}&personagemRelac=${georgePersRelacionado}&img=${georgeFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
+                                    	<a href="50sTimeline.jsp"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100"
+                                    <img class="d-block w-100" height="400px"
                                         src="${docFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${docName}</h5>
                                         <p>${docDescricao}</p>
-                                       <a href="relacionamento.jsp?parentesco=${docParentesco}&nome=${docName}&personagemRelac=${docPersRelacionado}"> <button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                       <a href="relacionamento.jsp?parentesco=${docParentesco}&nome=${docName}&personagemRelac=${docPersRelacionado}&img=${docFoto}"> <button type="button" class="btn btn-dark"> relacionamentos</button></a>
+                                    	<a href="50sTimeline.jsp"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100"
+                                    <img class="d-block w-100" height="400px"
                                         src="${martinFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${martinName}</h5>
                                         <p>${martinDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${martinParentesco}&nome=${martinName}&personagemRelac=${martinPersRelacionado}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${martinParentesco}&nome=${martinName}&personagemRelac=${martinPersRelacionado}&img=${martinFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
+                                    	<a href="50sTimeline.jsp"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100"
+                                    <img class="d-block w-100" height="400px"
                                         src="${lorraineFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${lorraineName}</h5>
                                         <p>${lorraineDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${lorraineParentesco}&nome=${lorraineName}&personagemRelac=${lorrainePersRelacionado}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${lorraineParentesco}&nome=${lorraineName}&personagemRelac=${lorrainePersRelacionado}&img=${lorraineFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
+                                    	<a href="50sTimeline.jsp"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block w-100"
+                                    <img class="d-block w-100" height="400px" width="200px"
                                         src="${biffFoto}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${biffName}</h5>
                                         <p>${biffDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${biffParentesco}&nome=${biffName}&personagemRelac=${biffPersRelacionado}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${biffParentesco}&nome=${biffName}&personagemRelac=${biffPersRelacionado}&img=${biffFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
+                                        <a href="50sTimeline.jsp"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
                                     </div>
                                 </div>
                             </div>
