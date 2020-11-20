@@ -3,6 +3,7 @@ package controller;
 import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,6 +35,8 @@ public class PersonagemServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ServletContext context = getServletContext();
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
 		Personagem martin =  personagemBO.getPersonagem("Martin Seamus McFly");	
 		Relacionamento martinRelac = relacionamentoBO.getRelacionamento("Martin Seamus McFly");
@@ -42,6 +45,7 @@ public class PersonagemServlet extends HttpServlet {
 		request.setAttribute("martinDescricao", martin.getDescricao());
 		request.setAttribute("martinParentesco", martinRelac.getParentesco());
 		request.setAttribute("martinPersRelacionado", martinRelac.getPersonagemRelacionado());
+		context.setAttribute("martinTimeline", martin.getTimeline());
 		
 		
 		Personagem doc =  personagemBO.getPersonagem("Dr. Emmett L. Brown (Doc)");
@@ -51,6 +55,7 @@ public class PersonagemServlet extends HttpServlet {
 		request.setAttribute("docDescricao", doc.getDescricao());
 		request.setAttribute("docParentesco", docRelac.getParentesco());
 		request.setAttribute("docPersRelacionado", docRelac.getPersonagemRelacionado());
+		context.setAttribute("docTimeline", doc.getTimeline());
 		
 		Personagem biff =  personagemBO.getPersonagem("Biff Tannen Howard");
 		Relacionamento biffRelac = relacionamentoBO.getRelacionamento("Biff Tannen Howard");
@@ -59,6 +64,7 @@ public class PersonagemServlet extends HttpServlet {
 		request.setAttribute("biffDescricao", biff.getDescricao());
 		request.setAttribute("biffParentesco", biffRelac.getParentesco());
 		request.setAttribute("biffPersRelacionado", biffRelac.getPersonagemRelacionado());
+		context.setAttribute("biffTimeline", biff.getTimeline());
 		
 		Personagem george =  personagemBO.getPersonagem("George McFly");
 		Relacionamento georgeRelac = relacionamentoBO.getRelacionamento("George McFly");
@@ -67,6 +73,7 @@ public class PersonagemServlet extends HttpServlet {
 		request.setAttribute("georgeDescricao", george.getDescricao());
 		request.setAttribute("georgeParentesco", georgeRelac.getParentesco());
 		request.setAttribute("georgePersRelacionado", georgeRelac.getPersonagemRelacionado());
+		context.setAttribute("georgeTimeline", george.getTimeline());
 		
 		Personagem lorraine =  personagemBO.getPersonagem("Lorraine Baines McFly");
 		Relacionamento lorraineRelac = relacionamentoBO.getRelacionamento("Lorraine Baines McFly");
@@ -75,6 +82,7 @@ public class PersonagemServlet extends HttpServlet {
 		request.setAttribute("lorraineDescricao", lorraine.getDescricao());
 		request.setAttribute("lorraineParentesco", lorraineRelac.getParentesco());
 		request.setAttribute("lorrainePersRelacionado", lorraineRelac.getPersonagemRelacionado());
+		context.setAttribute("lorraineTimeline", lorraine.getTimeline());
 		
 		dispatcher.forward(request, response);
 	}

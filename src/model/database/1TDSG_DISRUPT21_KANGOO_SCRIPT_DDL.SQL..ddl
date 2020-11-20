@@ -1,7 +1,7 @@
 /*
    Componentes do grupo Kangoo:
    84810 - Ingrid Miranda de Lacerda Buarque de Lyra
-   86353 - João Paulo Pereira Macêdo
+   86353 - Joï¿½o Paulo Pereira Macï¿½do
    85257 - Laura Fornazier Pilon Correia
    85987 - Lucas Pelosi de Almeida
    86125 - Mariana Alves de Oliveira Ribeiro
@@ -32,7 +32,7 @@ CREATE TABLE t_tl_personagem (
     nm_nome             VARCHAR2(255) NOT NULL,
     ds_descricao        VARCHAR2(1000) NOT NULL,
     ds_caracteristicas  VARCHAR2(1000) NOT NULL,
-    im_imgpersonagem    BLOB
+    im_imgpersonagem    VARCHAR2(1000) NOT NULL
 );
 
 -- Error - Index T_TL_PERSONAGEM__IDX has no columns
@@ -45,11 +45,6 @@ CREATE TABLE t_tl_pontotempo (
     dt_anovigente            NUMBER (4) NOT NULL,
     t_tl_personagem_nm_nome  VARCHAR2(255) NOT NULL
 );
-
-CREATE UNIQUE INDEX t_tl_pontotempo__idx ON
-    t_tl_pontotempo (
-        t_tl_personagem_nm_nome
-    ASC );
 
 ALTER TABLE t_tl_pontotempo ADD CONSTRAINT t_tl_pontemp_pk PRIMARY KEY ( cd_id,
                                                                          t_tl_personagem_nm_nome );
@@ -72,7 +67,7 @@ ALTER TABLE t_tl_relacionamento
 
 
 
--- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
+-- Relatï¿½rio do Resumo do Oracle SQL Developer Data Modeler: 
 -- 
 -- CREATE TABLE                             3
 -- CREATE INDEX                             1
