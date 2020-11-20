@@ -38,7 +38,7 @@ public class ControllerLingua extends HttpServlet {
 
 		Config.set(req.getSession(), Config.FMT_FALLBACK_LOCALE, locale);
 
-		resp.sendRedirect("index.jsp?lingua="+locale);
+		resp.sendRedirect("/backToTheFuture?lingua="+locale);
 	}
 
 }

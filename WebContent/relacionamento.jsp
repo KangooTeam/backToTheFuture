@@ -10,7 +10,7 @@
 
 <div class="container  mt-5 pt-5">
 	<div class="row d-flex justify-content-center">
-		<div class="col-lg-6 col-sm-9">
+		<div class="col-lg-5 col-sm-8">
 
             <div class="card hovercard">
                 <div class="cardheader">
