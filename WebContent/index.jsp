@@ -5,16 +5,8 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<head>
-    <meta charset="ISO-8859-1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title><f:message key="site.pagina.index.titulo" /></title>
-</head>
 
+<%@ include file="head.html" %>
 <body class="body-home">
    
 <%@ include file="menu-header.html" %>
@@ -32,7 +24,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${georgeName}</h5>
                                         <p>${georgeDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${georgeParentesco}&nome=${georgeName}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${georgeParentesco}&nome=${georgeName}&personagemRelac=${georgePersRelacionado}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -41,7 +33,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${docName}</h5>
                                         <p>${docDescricao}</p>
-                                       <a href="relacionamento.jsp?parentesco=${docParentesco}&nome=${docName}"> <button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                       <a href="relacionamento.jsp?parentesco=${docParentesco}&nome=${docName}&personagemRelac=${docPersRelacionado}"> <button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -50,7 +42,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${martinName}</h5>
                                         <p>${martinDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${martinParentesco}&nome=${martinName}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${martinParentesco}&nome=${martinName}&personagemRelac=${martinPersRelacionado}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -59,7 +51,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${lorraineName}</h5>
                                         <p>${lorraineDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${lorraineParentesco}&nome=${lorraineName}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${lorraineParentesco}&nome=${lorraineName}&personagemRelac=${lorrainePersRelacionado}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -68,7 +60,7 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${biffName}</h5>
                                         <p>${biffDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${biffParentesco}&nome=${biffName}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${biffParentesco}&nome=${biffName}&personagemRelac=${biffPersRelacionado}"><button type="button" class="btn btn-dark"> Ver mais</button></a>
                                     </div>
                                 </div>
                             </div>
@@ -90,18 +82,12 @@
         </div>
     </div>
     <div>
+    
 		<a class="idioma" href="change?lingua=pt-br"><img src="./img/brazil.png"></a>
 		<a class="idioma" href="change?lingua=en"><img src="./img/united.png"></a>
 	</div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+	<%@ include file="scripts.html" %>
+    
 </body>
 
 </html>
