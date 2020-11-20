@@ -12,7 +12,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title><f:message key="site.titulo" /></title>
+    <title><f:message key="site.pagina.index.titulo" /></title>
 </head>
 
 <body class="body-home">

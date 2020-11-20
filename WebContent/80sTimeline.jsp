@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/ee4091b551.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title>Back To The Future</title>
+    <title><f:message key="site.pagina.index.titulo" /></title>
 </head>
 
 <body class="body-80s">
@@ -28,7 +28,7 @@
                         <a class="col-lg-9 col-sm-10 col-8" href="./50sTimeline.jsp">
                             <h1><i class="fas fa-arrow-circle-left"></i></h1>
                         </a>
-                        <h6 class="col">Timeline durante anos 80
+                        <h6 class="col"><f:message key="site.pagina.80s.cardTitle" />
                         </h6>
 
                     </div>
