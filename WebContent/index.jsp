@@ -23,8 +23,8 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${georgeName}</h5>
                                         <p>${georgeDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${georgeParentesco}&nome=${georgeName}&personagemRelac=${georgePersRelacionado}&img=${georgeFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
-                                    	<a href="LinhaTempoServlet?personagem=${georgeName}"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${georgeParentesco}&nome=${georgeName}&personagemRelac=${georgePersRelacionado}&img=${georgeFoto}"><button type="button" class="btn btn-dark"><f:message key="site.pagina.index.relac"/></button></a>
+                                    	<a href="LinhaTempoServlet?personagem=${georgeName}"><button type="button" class="btn btn-dark"><f:message key="site.pagina.index.vertl"/></button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -33,8 +33,8 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${docName}</h5>
                                         <p>${docDescricao}</p>
-                                       <a href="relacionamento.jsp?parentesco=${docParentesco}&nome=${docName}&personagemRelac=${docPersRelacionado}&img=${docFoto}"> <button type="button" class="btn btn-dark"> relacionamentos</button></a>
-                                    	<a href="LinhaTempoServlet?personagem=${docName}"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
+                                       <a href="relacionamento.jsp?parentesco=${docParentesco}&nome=${docName}&personagemRelac=${docPersRelacionado}&img=${docFoto}"> <button type="button" class="btn btn-dark"><f:message key="site.pagina.index.relac"/></button></a>
+                                    	<a href="LinhaTempoServlet?personagem=${docName}"><button type="button" class="btn btn-dark"><f:message key="site.pagina.index.vertl"/></button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -43,8 +43,8 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${martinName}</h5>
                                         <p>${martinDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${martinParentesco}&nome=${martinName}&personagemRelac=${martinPersRelacionado}&img=${martinFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
-                                    	<a href="LinhaTempoServlet?personagem=${martinName}"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${martinParentesco}&nome=${martinName}&personagemRelac=${martinPersRelacionado}&img=${martinFoto}"><button type="button" class="btn btn-dark"><f:message key="site.pagina.index.relac"/></button></a>
+                                    	<a href="LinhaTempoServlet?personagem=${martinName}"><button type="button" class="btn btn-dark"><f:message key="site.pagina.index.vertl"/></button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -53,8 +53,8 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${lorraineName}</h5>
                                         <p>${lorraineDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${lorraineParentesco}&nome=${lorraineName}&personagemRelac=${lorrainePersRelacionado}&img=${lorraineFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
-                                    	<a href="LinhaTempoServlet?personagem=${lorraineName}"><button type="button" class="btn btn-dark"> Ver timeline</button></a>
+                                        <a href="relacionamento.jsp?parentesco=${lorraineParentesco}&nome=${lorraineName}&personagemRelac=${lorrainePersRelacionado}&img=${lorraineFoto}"><button type="button" class="btn btn-dark"><f:message key="site.pagina.index.relac"/></button></a>
+                                    	<a href="LinhaTempoServlet?personagem=${lorraineName}"><button type="button" class="btn btn-dark"><f:message key="site.pagina.index.vertl"/></button></a>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -63,8 +63,8 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>${biffName}</h5>
                                         <p>${biffDescricao}</p>
-                                        <a href="relacionamento.jsp?parentesco=${biffParentesco}&nome=${biffName}&personagemRelac=${biffPersRelacionado}&img=${biffFoto}"><button type="button" class="btn btn-dark"> relacionamentos</button></a>
-                                        <a href="LinhaTempoServlet?personagem=${biffName}"><button type="button" class="btn btn-dark"> Ver timeline</button></a> 
+                                        <a href="relacionamento.jsp?parentesco=${biffParentesco}&nome=${biffName}&personagemRelac=${biffPersRelacionado}&img=${biffFoto}"><button type="button" class="btn btn-dark"><f:message key="site.pagina.index.relac"/></button></a>
+                                        <a href="LinhaTempoServlet?personagem=${biffName}"><button type="button" class="btn btn-dark"><f:message key="site.pagina.index.vertl"/></button></a> 
                                     </div>
                                 </div>
                             </div>
