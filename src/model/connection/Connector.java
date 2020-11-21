@@ -19,8 +19,8 @@ public class Connector {
 	private Connection con;
 	private String oracleServer = "oracle.fiap.com.br";
 	private String databaseName = "orcl";
-	private String databaseUser = "RM85257";
-	private String databasePass = "281002";
+	private String databaseUser = "rm85987";
+	private String databasePass = "210695";
 
 	private static Connector instancia = null;
 

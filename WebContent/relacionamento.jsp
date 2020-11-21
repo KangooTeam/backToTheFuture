@@ -23,7 +23,7 @@
                     <div class="title">
                         <a target="_blank" href="https://scripteden.com/"><%out.print(request.getParameter("nome")); %></a>
                     </div>
-                    <div class="desc">Parentesco:</div>
+                    <div class="desc"><f:message key="site.parentesco"/></div>
                     <div class="desc"><%out.print(request.getParameter("parentesco")); %></div>
                     <div class="desc"><%out.print(request.getParameter("nome")); %></div>
                 </div>

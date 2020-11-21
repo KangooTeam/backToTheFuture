@@ -142,5 +142,7 @@
     right: -55.8px;
 } 
 
-  
-  
+.idioma {
+    position:absolute;
+    bottom:0;
+}

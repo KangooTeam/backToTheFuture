@@ -5,7 +5,6 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-
 <%@ include file="head.html" %>
 <body class="body-home">
    
@@ -72,12 +71,12 @@
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
                                 data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
+                                <span class="sr-only"><f:message key="site.pagina.index.previous"/></span>
                             </a>
                             <a class="carousel-control-next" href="#carouselExampleControls" role="button"
                                 data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
+                                <span class="sr-only"><f:message key="site.pagina.index.next"/></span>
                             </a>
                         </div>
                     </section>
@@ -86,13 +85,12 @@
             </div>
         </div>
     </div>
-    <div>
-    
-		<a class="idioma" href="change?lingua=pt-br"><img src="./img/brazil.png"></a>
-		<a class="idioma" href="change?lingua=en"><img src="./img/united.png"></a>
-	</div>
+
 	<%@ include file="scripts.html" %>
     
 </body>
-
+<div class="idioma">
+	<a href="change?lingua=pt-br"><img src="./img/brazil.png"></a>
+	<a href="change?lingua=en"><img src="./img/united.png"></a>
+</div>
 </html>
