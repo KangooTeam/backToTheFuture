@@ -15,6 +15,6 @@
 			<f:setLocale value="${param.lingua}" scope="session"/>
 		</c:if>
 		
-		<jsp:forward page="/backToTheFuture/index.jsp?"/>
+		<jsp:forward page="/backToTheFuture"/>
 		
 </html>
